@@ -362,7 +362,7 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   }
   .article-card:hover {
-    box-shadow: 0 0 0 2px var(--red);
+    box-shadow: 0 10px 22px rgba(18,16,14,0.12);
   }
   .article-img-area {
     width: 100%;
@@ -413,7 +413,7 @@
     transition: transform 0.25s, box-shadow 0.25s;
     box-shadow: 0 4px 20px rgba(0,0,0,0.15);
   }
-  .drawing-card:hover { box-shadow: 0 0 0 2px var(--red); }
+  .drawing-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
   .drawing-card img {
     width: 100%;
     height: 100%;
@@ -556,30 +556,40 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
-    background: white;
-    border: 2px solid var(--red);
-    color: var(--red);
-    font-size: 18px;
+    background: rgba(255,255,255,0.18);
+    border: 2.5px solid rgba(255,255,255,0.9);
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 10;
-    transition: all 0.2s;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    transition: all 0.2s ease;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.22);
     line-height: 1;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.35);
+    backdrop-filter: blur(2px);
   }
   .carousel-btn:hover {
-    background: var(--red);
-    color: white;
+    background: rgba(255,255,255,0.32);
+    border-color: #fff;
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.28);
   }
-  .carousel-btn.prev { left: -20px; }
-  .carousel-btn.next { right: -20px; }
-  .carousel-btn:disabled { opacity: 0.3; cursor: default; }
-  .carousel-btn:disabled:hover { background: white; color: var(--red); }
+  .carousel-btn.prev { left: -24px; }
+  .carousel-btn.next { right: -24px; }
+  .carousel-btn:disabled { opacity: 0.35; cursor: default; }
+  .carousel-btn:disabled:hover {
+    background: rgba(255,255,255,0.18);
+    border-color: rgba(255,255,255,0.9);
+    color: #fff;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.22);
+  }
 
   /* Spotify embed */
   .podcast-embed-wrap {
@@ -782,26 +792,32 @@
       <div class="carousel-wrap">
         <div class="carousel-track-outer">
           <div class="carousel-track podcasts" id="podcasts-track">
-            <div class="podcast-embed-wrap">
-              <iframe src="https://open.spotify.com/embed/episode/3bKPukOvCT9Q7bOcFGOpb3?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
+
             <div class="podcast-embed-wrap">
               <iframe src="https://open.spotify.com/embed/episode/1rRcvpSYf7eLAISQaO0gMj?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
             <div class="podcast-embed-wrap">
-              <iframe src="https://open.spotify.com/embed/episode/7D1pBAFbIH9CrEHGP2bR8g?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <iframe src="https://open.spotify.com/embed/episode/3bKPukOvCT9Q7bOcFGOpb3?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
+
             <div class="podcast-embed-wrap">
-              <iframe src="https://open.spotify.com/embed/episode/62wuDP58Gvw55eptWEPNNF?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <iframe src="https://open.spotify.com/embed/episode/50iCMxsqDt5Iapbud1syFX?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
-            <div class="podcast-embed-wrap">
-              <iframe src="https://open.spotify.com/embed/episode/4epkQTJzqgRTijoYxaNWrt?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
+
             <div class="podcast-embed-wrap">
               <iframe src="https://open.spotify.com/embed/episode/3wrdGMxrG4sWJewdlWTMkJ?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
+
             <div class="podcast-embed-wrap">
-              <iframe src="https://open.spotify.com/embed/episode/50iCMxsqDt5Iapbud1syFX?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <iframe src="https://open.spotify.com/embed/episode/4epkQTJzqgRTijoYxaNWrt?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+
+            <div class="podcast-embed-wrap">
+              <iframe src="https://open.spotify.com/embed/episode/62wuDP58Gvw55eptWEPNNF?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+
+            <div class="podcast-embed-wrap">
+              <iframe src="https://open.spotify.com/embed/episode/7D1pBAFbIH9CrEHGP2bR8g?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
           </div>
         </div><!-- end carousel-track-outer -->
@@ -831,6 +847,22 @@ function getItemCount(id) {
   return document.getElementById(id + '-track').children.length;
 }
 
+function alignCarouselButtons(id) {
+  const track = document.getElementById(id + '-track');
+  if (!track) return;
+  const section = track.closest('.section');
+  const wrap = track.closest('.carousel-wrap');
+  if (!section || !wrap) return;
+
+  const centerY = wrap.offsetTop + (wrap.offsetHeight / 2);
+  const prev = document.getElementById(id + '-prev');
+  const next = document.getElementById(id + '-next');
+
+  [prev, next].forEach(btn => {
+    if (btn) btn.style.top = centerY + 'px';
+  });
+}
+
 function updateCarousel(id) {
   const c = carousels[id];
   c.perView = getPerView(id);
@@ -853,6 +885,7 @@ function updateCarousel(id) {
 
   const offset = c.current * (itemW + gap);
   track.style.transform = `translateX(-${offset}px)`;
+  alignCarouselButtons(id);
 }
 
 function slide(id, dir) {
@@ -882,6 +915,11 @@ if (typeof ResizeObserver !== 'undefined') {
   document.addEventListener('DOMContentLoaded', initCarousels);
 }
 window.addEventListener('load', initCarousels);
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.carousel-wrap img, .carousel-wrap iframe').forEach(el => {
+    el.addEventListener('load', initCarousels);
+  });
+});
 window.addEventListener('resize', () => {
   ['articles','drawings','podcasts'].forEach(id => {
     carousels[id].current = 0;
